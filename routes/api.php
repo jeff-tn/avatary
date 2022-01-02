@@ -15,10 +15,5 @@ use App\Http\Controllers\Api\AvatarController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-
 Route::get('/initials', [AvatarController::class, 'initials'])->name('generateInitials');
 
